@@ -29,12 +29,27 @@ class _LoginState extends State<Login> {
                 ),
                 style: TextStyle(fontSize: 13
                 ),
-
-              )
-
+              ),
+              SizedBox(
+                height: 12,
+              ),
+              TextFormField(
+                autofocus: true,
+                keyboardType: TextInputType.text,
+                obscureText: true,
+                decoration: InputDecoration(
+                  labelText: "Senha",
+                  labelStyle: TextStyle(
+                    color: Colors.grey,
+                    fontWeight: FontWeight.w400,
+                    fontSize: 13,
+                  ),
+                ),
+              ),
+ 
           ],)
 
-        )
+        ),
       ),
 
       
