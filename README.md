@@ -1,16 +1,8 @@
 # flutter_psel_shinier2021
 
-Tela de login
+Tela de login para o desafio da Shinier
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Primeiro projeto utilizando flutter em que consiste em criar um tela de login, com entrada de dados do tipo email e senha
+assim como o botão de esqueci a minha senha e a opção de acesso por biometria
