@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class Login extends StatefulWidget {
   @override
   _LoginState createState() => _LoginState();
@@ -46,7 +47,19 @@ class _LoginState extends State<Login> {
                   ),
                 ),
               ),
- 
+              Container(
+                height: 40,
+                alignment: Alignment.topLeft,
+                child: TextButton(
+                  child: Text(
+                    "Esqueci a senha",
+                  ),
+                  onPressed: (){},
+                  ),
+                ),
+                SizedBox(
+                  height: 40,
+                )
           ],)
 
         ),
