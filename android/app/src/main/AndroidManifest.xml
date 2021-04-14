@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mauricio.flutter_psel_shinier2021">
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
    <application
         android:label="flutter_psel_shinier2021"
         android:icon="@mipmap/ic_launcher">

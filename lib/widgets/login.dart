@@ -17,10 +17,23 @@ class _LoginState extends State<Login> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              
+              ElevatedButton(
+                onPressed: () {print("Entrar");},
+                  child: Text(
+                    "Entrar",
+                      style: TextStyle(color: Colors.white),
+                  ),
+              ),
               TextFormField(
                 autofocus: true,
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.white24,
+                    ),
+                  ),
                   labelText: "Email",
                   labelStyle: TextStyle(
                     color: Colors.grey,
@@ -39,6 +52,11 @@ class _LoginState extends State<Login> {
                 keyboardType: TextInputType.text,
                 obscureText: true,
                 decoration: InputDecoration(
+                  border:OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.grey.shade100,
+                    ),
+                    ),
                   labelText: "Senha",
                   labelStyle: TextStyle(
                     color: Colors.grey,
