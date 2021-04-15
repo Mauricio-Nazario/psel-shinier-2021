@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -7,6 +8,10 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
   @override
+  
+  // ignore: override_on_non_overriding_member
+  bool _obscuretext = true;
+
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
@@ -80,18 +85,26 @@ class _LoginState extends State<Login> {
               TextFormField(
                 autofocus: true,
                 keyboardType: TextInputType.text,
-                obscureText: true,
+                obscureText: _obscuretext,
                 decoration: InputDecoration(
-                  border:OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Colors.grey.shade200,
+                  suffixIcon: GestureDetector(
+                    onTap: (){
+                      setState(() => _obscuretext = !_obscuretext);
+                    },
+                    child: Icon(
+                      _obscuretext ? Icons.visibility : Icons.visibility_off,
                     ),
+                  ),
+                    border:OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.grey.shade200,
+                      ),
                     ),
-                  labelText: "Senha",
-                  labelStyle: TextStyle(
-                    color: Colors.grey,
-                    fontWeight: FontWeight.w400,
-                    fontSize: 13,
+                    labelText: "Senha",
+                    labelStyle: TextStyle(
+                      color: Colors.grey,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 13,
                   ),
                 ),
               ),
