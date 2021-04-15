@@ -18,13 +18,42 @@ class _LoginState extends State<Login> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               
-              ElevatedButton(
-                onPressed: () {print("Entrar");},
+              Container(
+                height: 40,
+                width: 105,
+                alignment: Alignment.topLeft,
+                child: TextButton(
                   child: Text(
                     "Entrar",
-                      style: TextStyle(color: Colors.white),
+                    style: TextStyle(
+                      color: Colors.lightGreen[800],
+                    ),
                   ),
-              ),
+                  onPressed: (){},
+                  ),
+                ),
+                SizedBox(
+                  height: 5,
+                ),
+              
+              Container(
+                height: 40,
+                width: 105,
+                alignment: Alignment.topLeft,
+                child: TextButton(
+                  child: Text(
+                    "Esqueci a senha",
+                    style: TextStyle(
+                      color: Colors.lightBlue[800],
+                    ),
+                  ),
+                  onPressed: (){},
+                  ),
+                ),
+                SizedBox(
+                  height: 40,
+                ),
+              
               TextFormField(
                 autofocus: true,
                 keyboardType: TextInputType.emailAddress,
@@ -47,6 +76,7 @@ class _LoginState extends State<Login> {
               SizedBox(
                 height: 12,
               ),
+              
               TextFormField(
                 autofocus: true,
                 keyboardType: TextInputType.text,
@@ -54,7 +84,7 @@ class _LoginState extends State<Login> {
                 decoration: InputDecoration(
                   border:OutlineInputBorder(
                     borderSide: BorderSide(
-                      color: Colors.grey.shade100,
+                      color: Colors.grey.shade200,
                     ),
                     ),
                   labelText: "Senha",
@@ -65,19 +95,32 @@ class _LoginState extends State<Login> {
                   ),
                 ),
               ),
+              
               Container(
                 height: 40,
+                width: 105,
                 alignment: Alignment.topLeft,
                 child: TextButton(
                   child: Text(
-                    "Esqueci a senha",
+                    "Usar leitor de digital",
+                    style: TextStyle(
+                      color: Colors.black,
+                    ),
                   ),
                   onPressed: (){},
                   ),
                 ),
                 SizedBox(
                   height: 40,
-                )
+                ),
+              
+              ElevatedButton(
+                onPressed: () {print("Entrar");},
+                  child: Text(
+                    "Entrar",
+                      style: TextStyle(color: Colors.white),
+                  ),
+              ),  
           ],)
 
         ),
